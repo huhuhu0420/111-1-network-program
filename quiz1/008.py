@@ -20,6 +20,7 @@ def getNum (data):
 
 city = ['台北市', '新北市', '桃園市', '台中市', '台南市', '高雄市', '新竹縣', '苗栗縣', '彰化縣', '南投縣', '雲林縣', '嘉義縣', '屏東縣', '宜蘭縣', '花蓮縣', '台東縣', '澎湖縣', '金門縣', '連江縣']
 #city = ['青年路']
+target = input()
 roadAddressRecord ={}
 for index, city in enumerate(city):
     data = {'strTargetField':'COUNTY','strKeyWords':'%s' % city}
@@ -28,7 +29,7 @@ for index, city in enumerate(city):
     data = pd.read_html(res.text, header=0)[0]
     outcome = []
     # print(data)
-    target = '青年路'
+    # target = '青年路'
     for i in range(count):
         fullAddress = data.iloc[i,2]
         num = getNum(fullAddress)

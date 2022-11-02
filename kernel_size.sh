@@ -1,0 +1,12 @@
+echo -e "ls -lha /boot | grep 5.19.5"
+echo -e "-rw-r--r--  1 root toot 260k Sep  5 05:18 config-\033[0;31m5.19.5\033[0m"
+echo -e "-rw-r--r--  1 root toot 264k Sep  1 04:22 config-\033[0;31m5.19.5\033[0m.old"
+echo -e "lrwxrwxrwx  1 root toot   17 Sep  1 04:31 initrd.img -> initrd.img\033[0;31m-5.19.5\033[0m"
+echo -e "-rw-r--r--  1 root toot 799M Sep  1 05:29 initrd.img-\033[0;31m5.19.5\033[0m"
+echo -e "-rw-r--r--  1 root toot 5.9M Sep  1 05:18 System.map-\033[0;31m5.19.5\033[0m"
+echo -e "-rw-r--r--  1 root toot 6.1M Sep  1 04:22 System.map-\033[0;31m5.19.5\033[0m.old"
+echo -e "lrwxrwxrwx  1 root toot   14 Sep  1 05:18 vmlinuz -> vmlinuz-\033[0;31m5.19.5\033[0m"
+echo -e "-rw-r--r--  1 root toot  11M Sep  1 05:18 vmlinuz-\033[0;31m5.19.5\033[0m"
+echo -e "-rw-r--r--  1 root toot  12M Sep  1 04:22 vmlinuz-\033[0;31m5.19.5\033[0m.old"
+echo -e "lrwxrwxrwx  1 root toot   18 Sep  1 05:18 vmlinuz.old -> vmlinuz-\033[0;31m5.19.5\033[0m.old"
+

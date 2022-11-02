@@ -1,0 +1,19 @@
+Module                  Size  Used by
+uinput                 20480  1
+fuse                  172032  3
+intel_rapl_msr         20480  0
+intel_rapl_common      28672  1 intel_rapl_msr
+intel_uncore_frequency_common    16384  0
+isst_if_common         16384  0
+rfkill                 36864  3
+nfit                   69632  0
+libnvdimm             200704  1 nfit
+snd_hda_codec_generic    98304  1
+ledtrig_audio          16384  1 snd_hda_codec_generic
+snd_hda_intel          57344  3
+kvm_intel             376832  0
+snd_intel_dspcfg       32768  1 snd_hda_intel
+snd_intel_sdw_acpi     20480  1 snd_intel_dspcfg
+snd_hda_codec         176128  2 snd_hda_codec_generic,snd_hda_intel
+kvm                  1093632  1 kvm_intel
+snd_hda_core          110592  3 snd_hda_codec_generic,snd_hda_intel,snd_hda_codec
